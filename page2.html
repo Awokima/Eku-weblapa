@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .button {
+        width: 200px;
+        height: 100px;
+        margin: 14px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #CDD8D9;
+
+      }
+      button:active{
+        background:olive;
+    }
+  
+      #classImage {
+        display: none;
+        max-width: 100%;
+        height: auto;
+        padding: 35px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p{
+        font-size:200%;
+        text-indent: 20px;
+        font-weight:bold;
+    }
+  </style>
+</head>
+<body style="background-color: darkseagreen;">
+
+  <a href="page1.html" style="position: absolute; top: 10px; left: 10px; text-decoration: none; color: rgb(0, 137, 250);text-decoration-line:underline; font-size: 35px; font-family: Arial, Helvetica, sans-serif;">&#x2190;</a>
+
+  
+  <h1 style = "font-size: 200%;text-align:center; font-family: verdana;">
+    Ceļš uz telpām
+  </h1>
+  <p style = "font-size:150%;">
+    Nospied pogu un parādīsies attēls ar ceļu uz tevis izvēlēto telpu.
+  </p>
+  <button class="button" onclick="showImage('image1')">254. telpa</button>
+  <button class="button" onclick="showImage('image2')">256. telpa</button>
+  <button class="button" onclick="showImage('image3')">300. telpa</button>
+  <button class="button" onclick="showImage('image4')">310. telpa</button>
+  <button class="button" onclick="showImage('image5')">313. telpa</button>
+  <button class="button" onclick="showImage('image6')">318. telpa</button>
+  <button class="button" onclick="showImage('image7')">338. telpa</button>
+  <button class="button" onclick="showImage('image8')">340. telpa</button>
+  <button class="button" onclick="showImage('image9')">342. telpa</button>
+  <button class="button" onclick="showImage('image10')">400. telpa</button>
+  <button class="button" onclick="showImage('image11')">422. telpa</button>
+  <button class="button" onclick="showImage('image12')">428. telpa</button>
+  <button class="button" onclick="showImage('image13')">529. telpa</button>
+  <button class="button" onclick="showImage('image14')">538. telpa</button>
+  <button class="button" onclick="showImage('image15')">543. telpa</button>
+  <button class="button" onclick="showImage('image16')">548. telpa</button>
+
+  <img id="classImage" style="display: none;" src="" alt="Class Image">
+
+  <script>
+    function showImage(imageName) {
+      var imgElement = document.getElementById("classImage");
+      var imagePath = "pictures/";
+
+     if (imgElement.style.display === "block") {
+        imgElement.style.display = "none";
+      } else {
+
+        switch (imageName) {
+        case 'image1':
+          imgElement.src = imagePath + "254.telpa.png";
+          break;
+        case 'image2':
+          imgElement.src = imagePath + "256.telpa.png";
+          break;
+        case 'image3':
+          imgElement.src = imagePath + "300.telpa.png";
+          break;
+          case 'image4':
+          imgElement.src = imagePath + "310.telpa.png";
+          break;
+          case 'image5':
+          imgElement.src = imagePath + "313.telpa.png";
+          break;
+          case 'image6':
+          imgElement.src = imagePath + "318.telpa.png";
+          break;
+          case 'image7':
+          imgElement.src = imagePath + "338.telpa.png";
+          break;
+          case 'image8':
+          imgElement.src = imagePath + "340.telpa.png";
+          break;
+          case 'image9':
+          imgElement.src = imagePath + "342.telpa.png";
+          break;
+          case 'image10':
+          imgElement.src = imagePath + "400.telpa.png";
+          break;
+          case 'image11':
+          imgElement.src = imagePath + "422.telpa.png";
+          break;
+          case 'image12':
+          imgElement.src = imagePath + "428.telpa.png";
+          break;
+          case 'image13':
+          imgElement.src = imagePath + "529.telpa.png";
+          break;
+          case 'image14':
+          imgElement.src = imagePath + "538.telpa.png";
+          break;
+          case 'image15':
+          imgElement.src = imagePath + "543.telpa.png";
+          break;
+          case 'image16':
+          imgElement.src = imagePath + "548.telpa.png";
+          break;
+      }
+
+      imgElement.style.display = "block";
+    }
+}
+  </script>
+</body>
+</html>
